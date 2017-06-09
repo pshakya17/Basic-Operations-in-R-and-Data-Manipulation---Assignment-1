@@ -1,0 +1,22 @@
+# Execute the following lines which create two vectors of random integers which are chosen with replacement from the integers 0, 1, : : : , 999. Both vectors have length 250.
+set.seed(100)
+x <- sample(0:999, 250, replace=T)
+y <- sample(0:999, 250, replace=T)
+
+# 3(a) Identify the values in y which are > 500.
+y[which(y> 500)]
+
+# 3(b) Identify the index positions in y of the values which are > 700
+which(y>700)
+
+# 3(c) Identify values in x which are in Same index position to the values in y which are > 400
+x[which(y>400)]
+
+# 3(d) Values in y are within 200 of the maximum value of the terms in y
+range(max(y)-200 , max(y)+200)
+
+# 3(e) How many numbers in x are divisible by 2?
+length(x[which(x%%2==0)])
+
+# 3(f) Sort the numbers in the vector x in the order of increasing values in y.
+sort.int(x,partial = order(y), decreasing = FALSE)
