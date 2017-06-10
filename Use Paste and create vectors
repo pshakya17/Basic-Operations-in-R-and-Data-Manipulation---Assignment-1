@@ -1,0 +1,21 @@
+# 4(a) Use the function paste to create the following character vectors of length 30 a) ("Label 1", "Label 2", ....., "Label 30").
+n <- seq(1:30)
+paste("Label", n , sep = " ")
+
+#Output
+> paste("Label", n , sep = " ")
+ [1] "Label 1"  "Label 2"  "Label 3"  "Label 4"  "Label 5"  "Label 6"  "Label 7" 
+ [8] "Label 8"  "Label 9"  "Label 10" "Label 11" "Label 12" "Label 13" "Label 14"
+[15] "Label 15" "Label 16" "Label 17" "Label 18" "Label 19" "Label 20" "Label 21"
+[22] "Label 22" "Label 23" "Label 24" "Label 25" "Label 26" "Label 27" "Label 28"
+[29] "Label 29" "Label 30"
+
+
+# 4(a) Use the function paste to create the following character vectors of length 30 b) ("FN1", "FN2", ..., "FN30").
+paste("FN", n, sep = "")
+
+#Output
+> paste("FN", n, sep = "")
+ [1] "FN1"  "FN2"  "FN3"  "FN4"  "FN5"  "FN6"  "FN7"  "FN8"  "FN9"  "FN10" "FN11"
+[12] "FN12" "FN13" "FN14" "FN15" "FN16" "FN17" "FN18" "FN19" "FN20" "FN21" "FN22"
+[23] "FN23" "FN24" "FN25" "FN26" "FN27" "FN28" "FN29" "FN30"
